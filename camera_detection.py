@@ -9,10 +9,10 @@ while True:
         break
     
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
-    lower_red = np.array([86, 120, 70])
-    upper_red = np.array([125, 255, 255])
-    
-    mask = cv2.inRange(hsv, lower_red, upper_red)
+    lower_blue = np.array([86, 120, 70])
+    upper_blue = np.array([125, 255, 255])
+    #you can change the color according to your need
+    mask = cv2.inRange(hsv, lower_blue, upper_blue)
     red_detected = cv2.bitwise_and(frame, frame, mask=mask)
     
     cv2.imshow("Live Camera", frame)
