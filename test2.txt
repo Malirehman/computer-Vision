@@ -1,2 +1,0 @@
-this is test2 file and this is second line of test2 file
- this is third line of test2 file
